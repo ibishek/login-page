@@ -1,0 +1,21 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "tailwind-dev": "npx tailwindcss -i src/css/app.css -o build/app.css",
+    "tailwind-build": "NODE_ENV=production npx tailwindcss -i src/css/app.css -o build/app.css",
+    "tailwind-build-min": "NODE_ENV=production npx tailwindcss -i src/css/app.css -o build/app.min.css --minify"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4"
+  }
+}

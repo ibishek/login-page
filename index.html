@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Simple Login App made using Tailwindcss and Vite"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./src/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login App</title>
+  </head>
+  <body>
+    <div class="w-full min-h-screen max-h-full bg-gray-200 flex items-center">
+      <div
+        class="w-full lg:grid lg:grid-cols-2 lg:mx-32 2xl:max-w-6xl 2xl:mx-auto"
+      >
+        <div
+          class="
+            w-11/12
+            m-auto
+            py-12
+            px-8
+            bg-white
+            sm:w-8/12
+            md:w-3/5
+            lg:py-16 lg:px-12 lg:col-span-1 lg:w-full
+          "
+        >
+          <div class="space-y-6 mb-6">
+            <img
+              src="./src/img/logo.svg"
+              alt="login"
+              width="80"
+              height="48"
+              class="w-20 h-16"
+            />
+            <div class="space-y-3">
+              <h1 class="text-gray-900 font-black text-3xl ms:text-4xl">
+                Login
+              </h1>
+              <p class="text-gray-600 text-sm sm:text-base">
+                See your growth and get consulting support!
+              </p>
+            </div>
+            <div
+              class="space-y-6 lg:space-y-0 lg:space-x-2 lg:grid lg:grid-cols-2"
+            >
+              <button
+                type="button"
+                class="
+                  w-full
+                  rounded-full
+                  py-2
+                  px-4
+                  text-gray-800
+                  border border-gray-400
+                  sm:py-4 sm:px-6
+                  hover:shadow-lg hover:text-indigo-700
+                "
+              >
+                <div class="inline-flex">
+                  <img
+                    src="./src/img/google.svg"
+                    alt="google"
+                    class="w-6 h-6 hidden sm:block"
+                  />
+                  <span class="sm:ml-4 lg:hidden 2xl:block"
+                    >Sign in with Google</span
+                  >
+                </div>
+              </button>
+              <button
+                type="button"
+                class="
+                  w-full
+                  rounded-full
+                  py-2
+                  px-4
+                  text-gray-800
+                  border border-gray-400
+                  sm:py-4 sm:px-6
+                  hover:shadow-lg hover:text-indigo-700
+                "
+              >
+                <div class="inline-flex">
+                  <img
+                    src="./src/img/twitter.svg"
+                    alt="twitter"
+                    class="w-6 h-6 hidden sm:block"
+                  />
+                  <span class="sm:ml-4 lg:hidden 2xl:block"
+                    >Sign in with Twitter</span
+                  >
+                </div>
+              </button>
+            </div>
+            <div class="text-gray-500 text-center overflow-hidden info-text">
+              or Sign in with E-mail
+            </div>
+          </div>
+          <form
+            action="javascript:void(0)"
+            method="get"
+            autocomplete="off"
+            class="space-y-6"
+          >
+            <div>
+              <label for="email" class="text-gray-700">E-mail*</label>
+              <input
+                type="email"
+                name="email"
+                class="
+                  w-full
+                  rounded-full
+                  px-4
+                  py-2
+                  border border-gray-400
+                  placeholder-gray-500
+                  focus:border-indigo-500
+                  sm:focus:ring-2
+                  focus:ring-indigo-500
+                  sm:px-6 sm:py-4
+                "
+                placeholder="email@email-address.com"
+                autofocus
+              />
+            </div>
+            <div>
+              <label for="password" class="text-gray-700">Password* </label>
+              <input
+                type="password"
+                name="password"
+                class="
+                  w-full
+                  rounded-full
+                  px-4
+                  py-2
+                  border border-gray-400
+                  placeholder-gray-500
+                  focus:border-indigo-500
+                  sm:focus:ring-2
+                  focus:ring-indigo-500
+                  sm:px-6 sm:py-4
+                "
+                placeholder="Always use strong password. Hint: ZrZs7*aDC2"
+              />
+            </div>
+            <div class="sm:flex sm:justify-between">
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name="remember-me"
+                  id="remember-me"
+                  class="
+                    text-indigo-700
+                    rounded-md
+                    focus:ring-indigo-500
+                    cursor-pointer
+                  "
+                />
+                <label for="remember-me" class="px-4 text-gray-800"
+                  >Remember Me</label
+                >
+              </div>
+              <span class="text-indigo-700 cursor-pointer"
+                >Forget Password?</span
+              >
+            </div>
+            <div>
+              <input
+                type="submit"
+                value="SIGN IN"
+                class="
+                  w-full
+                  rounded-full
+                  px-4
+                  py-2
+                  bg-indigo-500
+                  text-white text-lg
+                  font-bold
+                  tracking-widest
+                  shadow-lg
+                  hover:shadow-xl
+                  sm:px-6 sm:py-4
+                  cursor-pointer
+                "
+              />
+            </div>
+            <div class="text-gray-800">
+              Not registered yet?
+              <br class="sm:hidden" />
+              <span class="text-indigo-700 cursor-pointer"
+                >Create an account</span
+              >
+            </div>
+          </form>
+          <footer class="w-full text-center mt-4">
+            <p class="text-gray-500">
+              2021 &copy;
+              <a href="https://abhishekrijal.com.np" class="text-indigo-700"
+                >ibishek</a
+              >
+              | Free to use no attribution is required.
+            </p>
+          </footer>
+        </div>
+        <div class="hidden lg:block lg:col-span-1">
+          <img
+            src="./src/img/hero-image.svg"
+            alt="hero"
+            class="w-full h-full object-fill"
+          />
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
