@@ -1,2 +1,2 @@
-import './build/app.css'
+import './build/app.min.css'
 
