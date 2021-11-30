@@ -17,7 +17,7 @@ A simple login page, developed using Tailwindcss and Vitejs.
 * `$ npm install`
 * `$ npm run tailwind-dev`
 * The main css for tailwind: `src/css/app.css`
-* Builing css for development: `$ npm run tailwind-dev`
+* Building css for development: `$ npm run tailwind-dev`
 * Tailwind output: `build/app.css`
 
 ## Building for production
