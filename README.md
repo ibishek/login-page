@@ -27,8 +27,8 @@ A simple login page, developed using Tailwindcss and Vitejs.
 * In order to include minified version of tailwindcss
   - change `./build/app.css` to `./build/app.min.css` inside `main.js`
   - `$ npm run build`
-* Run `$ npm run serve` to see your deloyment ready page
-* Files inside the `dist` directory are deployment-ready files.
+* Run `$ npm run serve` to locally preview production build
+* Files inside the `dist` directory are ready for deployment
 
 ## Bug 
 If you encounter any bugs please, raise an issue as soon as possible.
