@@ -32,3 +32,6 @@ A simple login page, developed using Tailwindcss and Vitejs.
 
 ## Bug 
 If you encounter any bugs please, raise an issue as soon as possible.
+
+## License
+The Login-Page is licensed under GPL.
